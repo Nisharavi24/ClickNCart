@@ -1,0 +1,161 @@
+.edit-profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(120deg, #020617, #0f172a, #1e3a8a);
+  padding: 20px;
+}
+
+
+
+
+.edit-profile-card {
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+
+
+
+.edit-profile-card:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+/* Headings */
+.edit-profile-card h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+
+
+
+.edit-profile-card h3 {
+  margin-top: 25px;
+  color: #1e40af;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+}
+
+
+
+
+/* Labels */
+.edit-profile-card label {
+  font-weight: 600;
+  color: #1e3a8a;
+  display: block;
+  margin-top: 15px;
+}
+
+
+
+
+/* Inputs */
+.edit-profile-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+
+
+
+.edit-profile-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+
+
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;   /* increased space above buttons */
+  gap: 10px;
+}
+
+
+
+
+.save-btn {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+
+
+
+.cancel-btn {
+  background-color: #cbd5e1;
+  color: #1e3a8a;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+
+
+
+.save-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.02);
+}
+
+
+
+
+.cancel-btn:hover {
+  background-color: #94a3b8;
+  transform: scale(1.02);
+}
+.change-password-btn {
+  margin-top: 15px;
+}
+
+
+/* Divider */
+hr {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+
+
+
+/* Loading */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px;
+  color: white;
+}

@@ -1,0 +1,90 @@
+/* Container */
+.terms-container {
+  color: #222;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+/* Top headings in bright blue */
+.terms-container h1,
+.terms-container h2 {
+  text-align: center;
+  color: #1e40af;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Main section headings */
+.terms-container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* Subheadings */
+.terms-container h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #1e40af; /* darker blue */
+}
+
+
+
+
+
+
+
+
+.terms-container ul {
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+.terms-container li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+.terms-container p {
+  margin-bottom: 10px;
+}
+

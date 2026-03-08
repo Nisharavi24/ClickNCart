@@ -1,0 +1,60 @@
+/* Buttons - uniform size */
+.view-all-btn,
+.back-btn {
+  display: inline-block;
+  width: 140px;          /* fixed width for all buttons */
+  height: 40px;          /* fixed height for all buttons */
+  line-height: 40px;     /* vertically center text */
+  margin: 20px 0;        /* spacing around */
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.view-all-btn:hover,
+.back-btn:hover {
+  background-color: #0d6efd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Active/click effect */
+.view-all-btn:active,
+.back-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px; /* ensures spacing below */
+  background-color: #1e90ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10; /* make sure it’s on top */
+  position: relative; /* avoid being clipped */
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0d6efd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+
+
+
+
+
+
+
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb); /* MATCHED HEADER */
+  color: #fff;
+  padding: 40px 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 -5px 30px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr 1fr 1fr 0.8fr;
+  align-items: start;
+  column-gap: 40px;
+}
+
+
+
+
+
+
+
+
+/* ================= TITLES ================= */
+.footer-titles h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+.footer-titles h3 {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+
+
+
+
+
+
+
+/* ================= ADDRESS ================= */
+.footer-address {
+  display: flex;
+  gap: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+.footer-icon {
+  font-size: 1.4rem;
+  margin-top: 4px;
+  color: #93c5fd;
+}
+
+
+
+
+
+
+
+
+/* ================= LINKS ================= */
+.footer-links h4 {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+.link-hover {
+  color: #e2e8f0;       /* Footer link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+.link-hover:hover {
+  color: #93c5fd;
+  padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+/* ================= SOCIAL ICONS ================= */
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+.footer-icons a {
+  color: #e2e8f0;       /* Match link-hover color */
+  font-size: 1.6rem;
+  transition: 0.3s ease;
+  text-decoration: none; /* Ensure no underline */
+}
+
+
+
+
+
+
+
+
+.footer-icons a:hover {
+  color: #93c5fd;
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* ================= BOTTOM ================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #cbd5e1;
+}
+
+
+
+
+
+
+
+
+  /* Force remove default link styling inside footer */
+.footer a {
+  color: #e2e8f0 !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+.footer a:hover {
+  color: #93c5fd !important;
+  text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+
+
+
+
+
+
+
+  .footer {
+    padding: 35px 25px 15px;
+  }
+}
+
+

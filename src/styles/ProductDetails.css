@@ -1,0 +1,159 @@
+.details-page {
+  min-height: 100vh;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+
+
+
+/* ================= CARD ================= */
+.details-card {
+  background: #fff;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+/* ================= IMAGE ================= */
+.details-image img {
+  width: 350px;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+
+
+
+/* ================= CONTENT ================= */
+.details-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+
+
+
+.desc {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+
+
+
+.details-content ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.details-content li {
+  margin-bottom: 6px;
+}
+
+
+
+
+/* ================= BUTTON GROUP ================= */
+.button-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+
+
+/* COMMON BUTTON STYLE */
+.button-group button {
+  flex: 1;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* ================= ADD TO CART ================= */
+.cart-btn {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+
+
+
+.cart-btn:hover {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* ================= BUY NOW ================= */
+.buy-btn {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+}
+
+
+
+
+.buy-btn:hover {
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+  transform: translateY(-2px);
+}
+
+
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .details-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+
+  .details-image img {
+    width: 250px;
+  }
+}
+
+
+

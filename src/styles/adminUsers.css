@@ -1,0 +1,261 @@
+/* ============================= */
+/* ADMIN USERS PAGE */
+/* ============================= */
+
+
+.admin-users-page {
+  color: #0f172a;
+  padding: 20px;
+}
+
+
+.admin-users-page .admin-title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+}
+
+
+/* ============================= */
+/* BACK BUTTON */
+/* ============================= */
+
+
+.admin-back-btn {
+  margin-bottom: 15px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.admin-back-btn:hover {
+  background: #1e40af;
+}
+
+
+/* ============================= */
+/* SEARCH CARD */
+/* ============================= */
+
+
+.search-card {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+
+.search-title {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.search-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+
+.search-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.search-box button:hover {
+  background: linear-gradient(90deg, #2563eb, #1e3a8a);
+  transform: translateY(-1px);
+}
+
+
+/* ============================= */
+/* TABLE */
+/* ============================= */
+
+
+.admin-user-table-container {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+
+.admin-user-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 700px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+
+.admin-user-table thead {
+  background: #1e3a8a;
+  color: white;
+}
+
+
+.admin-user-table th,
+.admin-user-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Rounded corners */
+
+
+.admin-user-table thead tr:first-child th:first-child {
+  border-top-left-radius: 14px;
+}
+
+
+.admin-user-table thead tr:first-child th:last-child {
+  border-top-right-radius: 14px;
+}
+
+
+.admin-user-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 14px;
+}
+
+
+.admin-user-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 14px;
+}
+
+
+.admin-user-table tbody tr:nth-child(even) {
+  background: #f1f5ff;
+}
+
+
+.admin-user-table tbody tr:hover {
+  background: #e0e7ff;
+}
+
+
+/* ============================= */
+/* ROLE BADGES */
+/* ============================= */
+
+
+.role-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+
+.role-badge.admin {
+  background: #dc2626;
+  color: white;
+}
+
+
+.role-badge.customer {
+  background: #2563eb;
+  color: white;
+}
+
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+
+.admin-edit-btn,
+.admin-delete-btn {
+  padding: 8px 20px;
+  min-width: 90px;
+  border-radius: 6px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.admin-edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+
+.admin-edit-btn:hover {
+  background: #1e40af;
+}
+
+
+.admin-delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+
+.admin-delete-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* ============================= */
+/* ERROR / EMPTY */
+/* ============================= */
+
+
+.error-text {
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+
+.empty-box {
+  text-align: center;
+  padding: 20px;
+}
+
+

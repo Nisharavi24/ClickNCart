@@ -1,0 +1,251 @@
+/* ============================= */
+/* ADMIN SALES PAGE */
+/* ============================= */
+
+.admin-sales-page {
+  color: #0f172a;
+}
+
+.admin-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+}
+
+/* ============================= */
+/* SEARCH CARD */
+/* ============================= */
+
+.search-card {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #1e3a8a;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* ========================================= */
+/* SALE FORM — COLUMN CONTROLLED LAYOUT   */
+/* ========================================= */
+
+.sale-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 22px;
+  margin-top: 10px;
+}
+
+.sale-form input,
+.sale-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+  outline: none;
+  background: white;
+  transition: 0.2s;
+}
+
+.sale-form input:focus,
+.sale-form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* FULL WIDTH ROWS */
+.form-row-full {
+  grid-column: span 3;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row-full label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* ROWS WITH 3 COLUMNS */
+.form-row-3 {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ROW WITH 2 COLUMNS */
+.form-row-2 {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* DATEPICKER */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+}
+
+/* SUBMIT BUTTON */
+.sale-form button {
+  grid-column: span 3;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sale-form button:hover {
+  background: linear-gradient(90deg, #2563eb, #1e3a8a);
+}
+
+/* ===================================== */
+/* TABLE */
+/* ===================================== */
+
+.table-container {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.user-table thead {
+  background: #1e3a8a;
+}
+
+.user-table th {
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.user-table td {
+  padding: 12px;
+  text-align: center;
+  color: #0f172a;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-table tbody tr:nth-child(even) {
+  background: #f1f5ff;
+}
+
+.user-table tbody tr:hover {
+  background: #e0e7ff;
+}
+
+/* Buttons */
+.action-buttons button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #1e40af;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+.empty-box {
+  padding: 20px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+  .sale-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-3,
+  .form-row-2,
+  .form-row-full {
+    grid-template-columns: 1fr !important;
+  }
+
+  .sale-form button {
+    grid-column: 1;
+    width: 100%;
+  }
+}
+
+/* Restore Back Button from Dashboard */
+.admin-sales-page .back-btn {
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+
+.admin-sales-page .back-btn:hover {
+  background-color: #2563eb;
+}

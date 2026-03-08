@@ -1,0 +1,117 @@
+/* Full page wrapper to center the card */
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f1f3d, #07102a); /* Dark blue gradient */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* Card container */
+.form-box {
+  width: 100%;
+  max-width: 480px; /* slightly wider card */
+  padding: 50px 40px;
+  background: #ffffff; /* white card */
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25), 0 0 20px rgba(124,108,255,0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  animation: floatCard 1.2s ease-in-out infinite alternate; /* subtle float animation */
+}
+
+
+
+
+/* Title */
+.form-box h2 {
+  font-size: 30px;
+  color: #1e3a8a; /* dark blue text */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+
+
+/* Inputs inside form */
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* space between inputs and button */
+  margin-top: 10px;
+}
+
+
+
+
+/* Individual inputs */
+.form-box input {
+  width: 100%;
+  padding: 14px 15px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Focus effect */
+.form-box input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  box-shadow: 0 0 12px rgba(124,108,255,0.5);
+}
+
+
+
+
+/* Login button spacing */
+.admin-login-btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+ background: linear-gradient(135deg,#1d4ed8,#2563eb);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px; /* extra spacing from inputs */
+}
+
+
+
+
+.admin-login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(79,70,229,0.5), 0 0 15px rgba(124,108,255,0.6);
+}
+
+
+
+
+/* Mobile responsive */
+@media (max-width: 520px) {
+  .form-box {
+    padding: 35px 25px;
+  }
+
+
+
+
+  .form-box h2 {
+    font-size: 26px;
+  }
+}

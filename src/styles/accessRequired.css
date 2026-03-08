@@ -1,0 +1,129 @@
+.access-required-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  position: relative;
+  background: linear-gradient(135deg, #0f1f3d, #1e3a8a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+
+
+
+/* Light black tint overlay */
+.access-required-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25); /* 25% black tint */
+  z-index: 1;
+}
+
+
+
+
+.card {
+  position: relative;
+  z-index: 2; /* above the overlay */
+  text-align: center;
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #ff7f7f; /* light red */
+  font-size: 28px;
+}
+
+
+
+
+.card p {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+
+.buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+
+
+
+/* LOGIN BUTTON WITH GLOW */
+.primary-btn {
+  background-color: #1e6ef0;
+  color: #fff;
+  box-shadow: 0 0 8px #1e6ef0;
+}
+
+
+
+
+.primary-btn:hover {
+  background-color: #1554b0;
+  box-shadow: 0 0 15px #1e6ef0, 0 0 25px #1e6ef0;
+}
+
+
+
+
+/* REGISTER BUTTON */
+.secondary-btn {
+  background-color: #e0f0ff;
+  color: #1e6ef0;
+  box-shadow: 0 0 6px #1e6ef0;
+}
+
+
+
+
+.secondary-btn:hover {
+  background-color: #c0e0ff;
+  box-shadow: 0 0 12px #1e6ef0, 0 0 20px #1e6ef0;
+}

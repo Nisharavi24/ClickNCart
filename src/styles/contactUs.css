@@ -1,0 +1,168 @@
+.contact-page {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+
+
+
+/* Top heading + subtext */
+.contact-page h2 {
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+
+
+
+.contact-subtext {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Cards container */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+
+
+/* Each card - thin, full width */
+.contact-card {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 16px;
+  min-height: 60px;
+  width: 100%;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+
+
+
+.contact-card:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
+/* Icons */
+.contact-icon {
+  font-size: 20px;
+  color: #2563eb;
+}
+
+
+
+
+/* Text */
+.contact-card span,
+.contact-card h4,
+.contact-card p {
+  color: #2563eb;
+}
+
+
+
+
+/* Links */
+.contact-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+
+
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Business hours card fix */
+.business-hours-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+
+
+
+.business-hours-card div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+
+
+.business-hours-card .contact-icon {
+  margin-top: 4px;
+}
+
+
+
+
+.business-hours-card p {
+  margin: 2px 0;
+}
+
+
+
+
+/* Back button */
+.back-btn-wrapper {
+  margin-top: 20px;
+}
+
+
+
+
+.back-btn {
+  background-color: #4a6cf7;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+
+
+.back-btn:hover {
+  opacity: 0.95;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 15px;
+  }
+}

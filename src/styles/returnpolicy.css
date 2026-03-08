@@ -1,0 +1,671 @@
+
+/* Container */
+.return-container {
+  color: #222;
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  line-height: 1.8;
+}
+
+
+
+
+
+
+
+
+/* All headings in #1e40af */
+.return-container h1,
+.return-container h2,
+.return-container h3,
+.return-container h4 {
+  color: #1e40af;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left; /* h1/h2 can be centered separately */
+}
+
+
+
+
+
+
+
+
+/* Optional: center top headings */
+.return-container h1,
+.return-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Lists */
+.return-container ul {
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+.return-container li {
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+/* Paragraphs */
+.return-container p {
+  margin-bottom: 10px;
+}
+
+
+
+
+.service-page {
+  min-height: 100vh;
+  background: #f1f5f9; /* white background */
+  padding-top: 100px;
+  padding-bottom: 60px;
+  color: #020617; /* dark text for readability */
+}
+
+
+
+
+.service-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+
+
+.service-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+.service-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1d4ed8;
+}
+
+
+
+
+.service-header h1 span {
+  color: #1d4ed8;
+}
+
+
+
+
+.service-header p {
+  font-size: 16px;
+  color: #000000;
+}
+
+
+
+
+.service-card,
+.service-item {
+  background: white;
+  color: #020617;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+
+
+.service-card:hover,
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.service-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+
+
+
+.service-form label {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+
+
+
+.service-form input,
+.service-form select,
+.service-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+
+
+
+.service-form textarea {
+  resize: none;
+  grid-column: span 2;
+  height: 120px;
+}
+
+
+
+
+.service-form input:focus,
+.service-form select:focus,
+.service-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+
+
+
+.full-width {
+  grid-column: span 2;
+}
+
+
+
+
+.service-btn {
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+
+
+
+.service-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.6);
+}
+
+
+
+
+
+
+
+
+.service-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+/* Small button (Admin Save) */
+.service-btn.small {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 6px;
+  background: #2563eb;
+}
+
+
+
+
+
+
+
+
+.service-btn.small:hover {
+  background: #1d4ed8;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   SERVICE LIST GRID
+========================================================= */
+
+
+
+
+
+
+
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+
+
+
+
+
+
+
+.service-item h3 {
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+.service-item p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   STATUS BADGES
+========================================================= */
+
+
+
+
+
+
+
+
+.status {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/* Pending */
+.status.pending {
+  background: #fde68a;
+  color: #92400e;
+}
+
+
+
+
+
+
+
+
+/* Approved */
+.status.approved {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+
+
+
+
+
+
+
+/* In Progress */
+.status.in-progress {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+
+
+
+
+
+
+
+/* Completed */
+.status.completed {
+  background: #bbf7d0;
+  color: #065f46;
+}
+
+
+
+
+
+
+
+
+/* Rejected */
+.status.rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   ADMIN SECTION
+========================================================= */
+
+
+
+
+
+
+
+
+.admin-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/* Header */
+.admin-table thead {
+  background: #2563eb;
+}
+
+
+
+
+
+
+
+
+.admin-table th {
+  color: #ffffff;
+  padding: 14px;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+/* Rows */
+.admin-table td {
+  padding: 12px 14px;
+  color: #111827;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+
+
+
+
+
+/* Zebra */
+.admin-table tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+
+
+
+
+
+
+
+/* Hover */
+.admin-table tbody tr:hover {
+  background: #e0f2fe;
+}
+
+
+
+
+
+
+
+
+/* Admin select */
+.admin-table select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* Admin textarea */
+.admin-table textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  resize: vertical;
+  font-size: 13px;
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+  .service-form {
+    grid-template-columns: 1fr;
+  }
+
+
+
+
+
+
+
+
+  .service-form textarea,
+  .full-width {
+    grid-column: span 1;
+  }
+
+
+
+
+
+
+
+
+  .service-header h1 {
+    font-size: 32px;
+  }
+
+
+
+
+
+
+
+
+  .admin-table th,
+  .admin-table td {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #2563eb;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+.admin-box {
+  min-height: 200px; /* ensures loader stays visible */
+}
+
+
+
+
+
+
+
+
+.service-list {
+  min-height: 200px; /* ensures loader stays visible */
+}

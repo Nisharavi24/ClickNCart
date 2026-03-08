@@ -1,0 +1,267 @@
+/* ============================= */
+/* ADMIN PRODUCTS PAGE */
+/* ============================= */
+
+
+.admin-products-page {
+  color: #0f172a;
+  padding: 20px;
+}
+
+
+.admin-products-page .admin-title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #1e3a8a;
+}
+
+
+.admin-products-page .admin-back-btn {
+  margin-bottom: 15px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ============================= */
+/* SEARCH CARD */
+/* ============================= */
+
+
+.admin-products-page .search-card {
+  background: #ffffff;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+
+.admin-products-page .search-title {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+
+.admin-products-page .search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.admin-products-page .search-box input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dbeafe;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+
+.admin-products-page .search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+
+.admin-products-page .search-box button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.admin-products-page .search-box button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #2563eb, #1e3a8a);
+  transform: translateY(-1px);
+}
+
+
+.admin-products-page .search-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ============================= */
+/* TABLE WITH ROUNDED CORNERS */
+/* ============================= */
+
+
+.admin-product-table-container {
+  margin-top: 25px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+
+.admin-product-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 800px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+
+.admin-product-table thead {
+  background: #1e3a8a;
+  color: white;
+}
+
+
+.admin-product-table th,
+.admin-product-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Round corners for table */
+.admin-product-table thead tr:first-child th:first-child {
+  border-top-left-radius: 14px;
+}
+
+
+.admin-product-table thead tr:first-child th:last-child {
+  border-top-right-radius: 14px;
+}
+
+
+.admin-product-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 14px;
+}
+
+
+.admin-product-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 14px;
+}
+
+
+.admin-product-table tbody tr:nth-child(even) {
+  background: #f1f5ff;
+}
+
+
+.admin-product-table tbody tr:hover {
+  background: #e0e7ff;
+}
+
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+
+.admin-product-table td .action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Increased gap between buttons */
+}
+
+
+.admin-edit-btn,
+.admin-delete-btn {
+  padding: 8px 20px;   /* same size */
+  min-width: 90px;      /* ensures equal width */
+  border-radius: 6px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.admin-edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+
+.admin-edit-btn:hover {
+  background: #1e40af;
+}
+
+
+.admin-delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+
+.admin-delete-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* ============================= */
+/* FORM INPUTS */
+/* ============================= */
+
+
+.admin-product-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.admin-product-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dbeafe;
+}
+
+
+.admin-product-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.admin-product-form button:hover {
+  background: #1e40af;
+}
+/* Make dropdown look EXACTLY like input */
+.admin-product-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  font-size: 16px;
+  color: #0f172a;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+
+.admin-product-form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+

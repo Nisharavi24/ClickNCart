@@ -1,0 +1,161 @@
+/* FULL SCREEN ADMIN */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  background: #f5f9ff;
+}
+
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #020617, #1e3a8a);
+  color: white;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+
+.sidebar.open {
+  width: 260px;
+}
+
+
+.sidebar:not(.open) {
+  width: 70px;
+}
+
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.sidebar button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.sidebar nav {
+  margin-top: 30px;
+}
+
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+
+/* MAIN CONTENT */
+.admin-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* DASHBOARD BOX */
+.dashboard-box {
+  background: white;
+  width: 600px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  animation: fadeUp 0.5s ease;
+}
+
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+.search-box button {
+  padding: 10px 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+
+/* USER CARD */
+.user-card {
+  background: #f1f5ff;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+  margin-top: 10px;
+}
+
+
+/* BUTTON */
+.manage-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #111827;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+
+.manage-btn:hover {
+  background: #2563eb;
+}
+
+
+/* EMPTY */
+.empty-box {
+  padding: 15px;
+  background: #eef2ff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+/* ERROR */
+.error-text {
+  color: red;
+  margin-bottom: 10px;
+}
+
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+

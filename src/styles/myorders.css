@@ -1,0 +1,345 @@
+.orders-container {
+  padding: 50px 20px;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000; /* All default text black */
+}
+
+
+.orders-container h2 {
+  text-align: center;
+  font-size: 36px; /* increased */
+  font-weight: 800;
+  margin-bottom: 45px;
+  color: #1e3a8a;
+}
+
+
+/* ================= ORDER CARD ================= */
+
+
+.order-card {
+  width: 95%;
+  margin: 0 auto 35px auto;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+.order-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= ORDER HEADER ================= */
+
+
+.order-header {
+  padding: 28px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f1f5f9;
+}
+
+
+.order-header p {
+  margin: 6px 0;
+  font-size: 16px; /* increased */
+  color: #000;
+}
+
+
+.order-header h4 {
+  margin: 20px 0 10px;
+  font-size: 18px; /* increased */
+  font-weight: 700;
+  color: #6366f1; /* keep blue accent */
+}
+
+
+/* ================= STATUS BAR ================= */
+
+
+.order-status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  position: relative;
+}
+
+
+.order-status-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 90%;
+  height: 4px;
+  background: #e2e8f0;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  z-index: 0;
+}
+
+
+.status-step {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 50px;
+  font-size: 15px; /* increased */
+  font-weight: 600;
+  background: #e2e8f0;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+
+.status-step.active {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+
+.status-step.current {
+  border: 2px solid #6366f1;
+  font-weight: 700;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+
+.order-products {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease;
+}
+
+
+.product-row:hover {
+  background: #eef2ff;
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.08);
+}
+
+
+.product-image img {
+  width: 110px; /* slightly bigger */
+  height: 110px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+
+.product-details {
+  flex: 1;
+}
+
+
+.product-details p {
+  margin: 5px 0;
+  font-size: 16px; /* increased */
+  color: #000;
+}
+
+
+.product-details p strong {
+  color: #6366f1;
+}
+
+
+.product-total {
+  font-weight: bold;
+  font-size: 18px; /* increased */
+  color: #1e3a8a;
+}
+
+
+/* ================= ORDER TOTALS ================= */
+
+
+.order-totals {
+  padding: 20px 28px;
+  border-top: 1px solid #e2e8f0;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.order-totals div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #000;
+}
+
+
+.order-totals div span {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+
+.order-totals .grand-total-row {
+  font-size: 18px;
+  font-weight: 700;
+  color: #6366f1;
+}
+
+
+/* ================= ACTION BUTTONS ================= */
+
+
+.order-actions {
+  padding: 22px 28px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  gap: 18px;
+  background: #f1f5f9;
+}
+
+
+.action-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px; /* increased */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+
+.track-btn {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+}
+
+
+.track-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
+
+.invoice-btn {
+  background: white;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+}
+
+
+.invoice-btn:hover {
+  background: #6366f1;
+  color: white;
+}
+
+
+/* ================= PAYMENT STATUS BUTTON ================= */
+.payment-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+
+.payment-btn.paid {
+  background: #22c55e; /* green */
+  color: white;
+}
+
+
+.payment-btn.pending {
+  background: #f59e0b; /* orange */
+  color: white;
+}
+
+
+.payment-btn.failed {
+  background: #ef4444; /* red */
+  color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 768px) {
+  .orders-container h2 {
+    font-size: 28px;
+  }
+
+
+  .product-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .product-total {
+    margin-top: 10px;
+  }
+
+
+  .order-status-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .order-status-bar::before {
+    display: none;
+  }
+
+
+  /* Totals responsive */
+  .order-totals div {
+    font-size: 15px;
+  }
+
+
+  .order-totals .grand-total-row {
+    font-size: 16px;
+  }
+
+
+  .order-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+
+  .action-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

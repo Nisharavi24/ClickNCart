@@ -1,0 +1,126 @@
+.invoice-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+.invoice-box {
+  background: white;
+  width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+.invoice-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+thead {
+  background: #111827;
+  color: white;
+}
+
+
+
+
+
+
+
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+.bill-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+.bill-summary h3 {
+  margin-top: 10px;
+  color: #111827;
+}
+
+
+
+
+
+
+
+
+.download-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(45deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
