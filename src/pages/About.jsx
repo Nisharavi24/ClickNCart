@@ -1,19 +1,15 @@
 import React from "react";
 import Layout from "../components/Layout";
-import missionImg from "../assets/mission.png";
-import visionImg from "../assets/vision.png";
-import valuesImg from "../assets/values.png";
-import servicesImg from "../assets/services.png";
 import "../styles/about.css";
 
 
 
 
 const aboutCards = [
-  { id: 1, title: "Our Mission", description: "Providing smart IT solutions including laptops, printers, rentals, and services with trust and reliability.", img: missionImg },
-  { id: 2, title: "Our Vision", description: "To become the most trusted IT partner in Bengaluru, delivering innovative and affordable technology solutions.", img: visionImg },
-  { id: 3, title: "Our Values", description: "Customer satisfaction, honesty, quality, and innovation are at the core of everything we do.", img: valuesImg },
-  { id: 4, title: "Our Services", description: "We offer laptops and printers on rent or sale, installation services, maintenance, and IT consultancy.", img: servicesImg },
+  { id: 1, title: "Our Mission", description: "Providing smart IT solutions including laptops, printers, rentals, and services with trust and reliability.", img: "/mission.png" },
+  { id: 2, title: "Our Vision", description: "To become the most trusted IT partner in Bengaluru, delivering innovative and affordable technology solutions.", img: "/vision.png" },
+  { id: 3, title: "Our Values", description: "Customer satisfaction, honesty, quality, and innovation are at the core of everything we do.", img: "/values.png" },
+  { id: 4, title: "Our Services", description: "We offer laptops and printers on rent or sale, installation services, maintenance, and IT consultancy.", img: "/services.png" },
 ];
 
 

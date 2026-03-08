@@ -11,14 +11,6 @@ import { FaLaptop, FaDollarSign, FaBolt, FaUserTie } from "react-icons/fa";
 
 
 
-import logoImg from "../assets/logo.png";
-import laptopImg from "../assets/laptop.png";
-import printerImg from "../assets/printer.png";
-import laptop2Img from "../assets/laptop2.png";
-import printer2Img from "../assets/printer2.jpg";   // ✅ FIXED (was .jpg)
-
-
-
 
 function Home() {
   const navigate = useNavigate();
@@ -26,38 +18,36 @@ function Home() {
 
 
 
-  /* ================= PRODUCTS ================= */
   const products = [
-    {
-      id: 1,
-      name: "Refurbished Laptop",
-      price: "₹15,000",
-      type: "Rent & Sale",
-      img: laptopImg,
-    },
-    {
-      id: 2,
-      name: "Refurbished Printer",
-      price: "₹9,500",
-      type: "Rent & Sale",
-      img: printerImg,
-    },
-    {
-      id: 3,
-      name: "Refurbished Laptop Pro",
-      price: "₹18,000",
-      type: "Rent & Sale",
-      img: laptop2Img,
-    },
-    {
-      id: 4,
-      name: "Refurbished Printer XL",
-      price: "₹12,500",
-      type: "Rent & Sale",
-      img: printer2Img,
-    },
-  ];
-
+  {
+    id: 1,
+    name: "Refurbished Laptop",
+    price: "₹15,000",
+    type: "Rent & Sale",
+    img: "/laptop.png",
+  },
+  {
+    id: 2,
+    name: "Refurbished Printer",
+    price: "₹9,500",
+    type: "Rent & Sale",
+    img: "/printer.png",
+  },
+  {
+    id: 3,
+    name: "Refurbished Laptop Pro",
+    price: "₹18,000",
+    type: "Rent & Sale",
+    img: "/laptop2.png",
+  },
+  {
+    id: 4,
+    name: "Refurbished Printer XL",
+    price: "₹12,500",
+    type: "Rent & Sale",
+    img: "/printer2.jpg",
+  },
+];
 
 
 
@@ -129,7 +119,7 @@ function Home() {
       {/* ================= HERO ================= */}
       <section className="hero">
         <div className="floating-logo">
-          <img src={logoImg} alt="Jeraphic Logo" />
+          <img src="/logo.png" alt="Jeraphic Logo" />
         </div>
 
 

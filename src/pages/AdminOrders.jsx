@@ -4,7 +4,7 @@ import { db } from "../firebase/firebase";
 import { collection, doc, onSnapshot, query, updateDoc } from "firebase/firestore";
 import { jsPDF } from "jspdf";
 import "../styles/AdminOrders.css";
-import logo from "../assets/logo.png";
+<img src="/logo.png" alt="Logo" />
 
 function AdminOrders() {
   const [orders, setOrders] = useState([]);

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import "../styles/navbar.css";
-import logo from "../assets/logo.png";
 import { FaShoppingCart, FaSearch, FaUserCircle } from "react-icons/fa";
 import { logoutUser } from "../services/authServices";
 import { auth } from "../firebase/firebase";
@@ -100,7 +99,7 @@ function Navbar() {
       {/* LEFT */}
       <div className="nav-left">
         <Link to="/" onClick={() => setOpen(false)}>
-          <img src={logo} alt="Jeraphic Logo" className="nav-logo" />
+          <img src="/logo.png" alt="Jeraphic Logo" className="nav-logo" />
         </Link>
 
 
@@ -181,6 +180,7 @@ function Navbar() {
 ) : (
   <Link to="/raise-service" onClick={() => setOpen(false)}>
     Raise Service
+
   </Link>
 )}
 

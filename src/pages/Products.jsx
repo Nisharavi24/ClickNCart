@@ -3,7 +3,6 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import ProductCard from "../components/ProductCard";
-import "../styles/products.css";
 
 
 

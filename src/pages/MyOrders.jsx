@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { db, auth } from "../firebase/firebase";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { jsPDF } from "jspdf";
-import logo from "../assets/logo.png";
 import "../styles/MyOrders.css";
+<img src="/logo.png" alt="Logo" />
 
 function MyOrders() {
   const [orders, setOrders] = useState([]);
@@ -62,7 +62,7 @@ function MyOrders() {
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.getWidth();
     const img = new Image();
-    img.src = logo;
+    img.src = "/logo.png" ;
 
     img.onload = () => {
       doc.addImage(img, "PNG", 20, 15, 25, 25);
